@@ -10,7 +10,7 @@ $(document).ready(function () {
             lat = position.coords.latitude;
             long = position.coords.longitude;
 
-            var api = 'https://fcc-weather-api.glitch.me/api/current?lat=' + lat + '&lon=' + long + '';
+            var api = "'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/9e2f8244360c8ce6abb5f2424e9e35ae/" + lat + "," + long + "'";
 
             $.getJSON(api, function (res) {
 
